@@ -9,12 +9,12 @@ class Router extends VueRouter {
   constructor() {
 
     super({
-      hashbang: false,
       pushState: true,
-      history: true,
+      mode: 'history',
       abstract: false,
-      saveScrollPosition: false,
-      transitionOnLoad: false
+      scrollBehavior: function (to, from, savedPosition) {
+        return savedPosition || { x: 0, y: 0 };
+      }
     });
 
     this.path = '/';

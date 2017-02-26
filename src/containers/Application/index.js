@@ -44,7 +44,7 @@ export default Vue.extend({
     };
   },
 
-  ready() {
+  mounted() {
 
     this.addDeviceClass();
     this.addBrowserClass();

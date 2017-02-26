@@ -39,7 +39,7 @@ export default Vue.extend({
     };
   },
 
-  ready() {},
+  mounted() {},
 
   methods: {},
 

@@ -8,7 +8,7 @@ const FadeTransitionMixin = {
 
   route: {
 
-    activate: function( { next } ) {
+    beforeRouteEnter: function( { next } ) {
 
       TweenMax.fromTo(this.$el, 0.7, {
         opacity: 0
@@ -20,7 +20,7 @@ const FadeTransitionMixin = {
       next();
     },
 
-    deactivate: function( { next } ) {
+    beforeDestroy: function( { next } ) {
 
       TweenMax.to(this.$el, 0.7, {
         opacity: 0,

@@ -25,7 +25,11 @@ class Main {
 
   start() {
 
-    this.router.start(Application, '#application');
+    new Vue({
+      el: '#application',
+      router: Router,
+      template: Application
+    });
 
   }
 }

@@ -2,16 +2,14 @@
 
 import Vuex from 'vuex';
 import exampleStore from 'vuex/example/store';
-import createLogger from 'vuex/logger';
 
 Vue.use(Vuex);
 
-const debug = process.env.NODE_ENV !== 'production';
-
-export default new Vuex.Store({
+const store = new Vuex.Store({
   modules: {
     exampleStore
   },
-  strict: debug,
-  middlewares: debug ? [createLogger()] : []
+  strict: process.env.NODE_ENV !== 'development'
 });
+
+export default store;

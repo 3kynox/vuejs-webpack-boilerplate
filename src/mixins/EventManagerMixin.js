@@ -19,8 +19,10 @@ const EventManagerMixin = {
     this.bind();
   },
 
-  ready() {
-    this.addEventListeners();
+  mounted() {
+    this.$nextTick(function () {
+      this.addEventListeners();
+    });
   },
 
   beforeDestroy() {
