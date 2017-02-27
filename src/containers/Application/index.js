@@ -6,6 +6,8 @@ import States from 'core/States';
 
 import debounce from 'lodash.debounce';
 
+import Vue from 'vue';
+
 import store from 'vuex/store';
 
 import {

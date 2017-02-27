@@ -3,7 +3,10 @@
 import './styles.scss';
 
 import EventManagerMixin from 'mixins/EventManagerMixin';
+
 import FadeTransitionMixin from 'mixins/FadeTransitionMixin';
+
+import Vue from 'vue';
 
 import {
   WINDOW_RESIZE

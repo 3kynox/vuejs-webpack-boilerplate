@@ -2,6 +2,8 @@
 
 import './styles.scss';
 
+import Vue from 'vue';
+
 import EventManagerMixin from 'mixins/EventManagerMixin';
 
 import {

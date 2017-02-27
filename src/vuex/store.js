@@ -1,6 +1,9 @@
 'use strict';
 
+import Vue from 'vue';
+
 import Vuex from 'vuex';
+
 import exampleStore from 'vuex/example/store';
 
 Vue.use(Vuex);

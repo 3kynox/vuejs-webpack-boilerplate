@@ -1,3 +1,5 @@
+import Vue from 'vue';
+
 import Application from 'containers/Application';
 
 import Router from 'core/Router';

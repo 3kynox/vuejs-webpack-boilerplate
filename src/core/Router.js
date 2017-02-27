@@ -1,3 +1,5 @@
+import Vue from 'vue';
+
 import VueRouter from 'vue-router';
 
 import HomePageComponent from 'containers/Homepage';
@@ -21,15 +23,9 @@ class Router extends VueRouter {
     this.firstRoute = true;
     this.routeTimeout = null;
 
-
-    this.map({
-
-      '*': {
-        name: "home",
-        component: HomePageComponent
-      }
-
-    });
+    this.routes = [
+      { path: '*', component: HomePageComponent }
+    ];
   }
 }
 
